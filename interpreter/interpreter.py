@@ -6,4 +6,6 @@ def interpreter(x,y,z):
     x, z = float(x), float(z)   
     return x + z if y == "+" else x - z if y == "-" else x / z if y == "/" else x * z
     
-main()
+
+if __name__ == "__main__":
+    main()
