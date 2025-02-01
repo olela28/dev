@@ -1,13 +1,9 @@
-x,y,z = input("Expression: ").split(" ")
-x, z = float(x), float(z)
+def main():
+    x,y,z = input("Expression: ").split()
+    print(f"{interpreter(x,y,z):.1f}")
 
-if y == "+":
-    result = x + z
-elif y == "-":
-    result = x - z
-elif y == "/":
-    result = x / z
-else:
-    result = x * z
-
-print(f"{result:.1f}")
+def interpreter(x,y,z):
+    x, z = float(x), float(z)   
+    return x + z if y == "+" else x - z if y == "-" else x / z if y == "/" else x * z
+    
+main()
