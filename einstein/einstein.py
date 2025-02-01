@@ -1,4 +1,2 @@
-m = int(input("m: "))
 c = int(300000000)
-E = m * (c ** 2)
-print(f"E: {E}")
+print(f"E: {int(input("m: ")) * pow(c, 2)}")
